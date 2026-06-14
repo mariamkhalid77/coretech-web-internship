@@ -2,12 +2,12 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 displayTasks();
 
-function addTask(){
+function addTask() {
 
     const input = document.getElementById("taskInput");
     const taskText = input.value.trim();
 
-    if(taskText === ""){
+    if (taskText === "") {
         alert("Please enter a task!");
         return;
     }
@@ -22,13 +22,12 @@ function addTask(){
     displayTasks();
 }
 
-function displayTasks(){
+function displayTasks() {
 
     const taskList = document.getElementById("taskList");
-
     taskList.innerHTML = "";
 
-    tasks.forEach((task,index)=>{
+    tasks.forEach((task, index) => {
 
         const li = document.createElement("li");
 
@@ -38,17 +37,13 @@ function displayTasks(){
             </span>
 
             <div class="action-buttons">
-
-                <button class="complete-btn"
-                        onclick="toggleTask(${index})">
+                <button class="complete-btn" onclick="toggleTask(${index})">
                     ${task.completed ? 'Undo' : 'Complete'}
                 </button>
 
-                <button class="delete-btn"
-                        onclick="deleteTask(${index})">
+                <button class="delete-btn" onclick="deleteTask(${index})">
                     Delete
                 </button>
-
             </div>
         `;
 
@@ -56,34 +51,24 @@ function displayTasks(){
     });
 }
 
-function toggleTask(index){
-
+function toggleTask(index) {
     tasks[index].completed = !tasks[index].completed;
-
     saveTasks();
     displayTasks();
 }
 
-function deleteTask(index){
-
-    tasks.splice(index,1);
-
+function deleteTask(index) {
+    tasks.splice(index, 1);
     saveTasks();
     displayTasks();
 }
 
-function saveTasks(){
-
-    localStorage.setItem(
-        "tasks",
-        JSON.stringify(tasks)
-    );
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-document.getElementById("taskInput").addEventListener("keypress", function(event){
-
-    if(event.key === "Enter"){
+document.getElementById("taskInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
         addTask();
     }
-
 });
