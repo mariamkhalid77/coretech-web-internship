@@ -10,3 +10,4 @@
 - Task 5: JAVASCRIPT FORM VALIDATION-"Handles form validation using JavaScript"
 - Task 6: TO-DO LIST APP-"Builds a To-Do List app with add, delete, and localstorage features"
 - Task 7: FETCH USER DATA-"This task fetches and displays data from an API"
+- Task 8: PRODUCT LISTING WEBSITE-"Product listing page with Search, Filter , Sort , and responsive design"

@@ -1,0 +1,85 @@
+/* Reset Default Styles*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+/* Page Styling*/
+body{
+    background:#b0b1b4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+/*Search and Filter Controls*/
+.controls{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+input, select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+/*Product Grid Layout*/
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+/*Product Card Design*/
+.card{
+    background:rgb(97, 88, 88);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0e1215;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#2dde77;
+    font-weight:bold;
+}
+
+.category{
+    color:#369ee4;
+    margin:8px 0;
+}
+/*Responsive Design*/
+@media(max-width:768px){
+    .controls{
+        flex-direction:column;
+    }
+
+    input,select{
+        width:100%;
+    }
+}

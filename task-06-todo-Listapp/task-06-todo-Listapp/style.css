@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, rgb(130, 128, 128));
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:550px;
+    background:#c0bebe;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+.input-box input:focus{
+    border-color:#5d75b9;
+}
+
+.input-box button{
+    padding:12px 18px;
+    background:#5d75b9;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.input-box button:hover{
+    background:#5d75b9;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8fafc;
+    border-left:4px solid #2d323b;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    gap:10px;
+}
+
+.task-text{
+    flex:1;
+    word-break:break-word;
+    color:#334155;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:#94a3b8;
+}
+
+.action-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.complete-btn{
+    background:#06bc3c;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.complete-btn:hover{
+    background:#06bc3c;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Responsive Design */
+
+@media(max-width:500px){
+
+    .input-box{
+        flex-direction:column;
+    }
+
+    .input-box button{
+        width:100%;
+    }
+
+    li{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .action-buttons{
+        width:100%;
+    }
+
+    .complete-btn,
+    .delete-btn{
+        flex:1;
+    }
+}
