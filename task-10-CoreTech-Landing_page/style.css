@@ -429,16 +429,4 @@ footer{
     font-size: 28px;
     cursor: pointer;
   }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 80px 7%;
-  }
 }
