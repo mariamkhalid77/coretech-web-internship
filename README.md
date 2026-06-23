@@ -11,3 +11,5 @@
 - Task 6: TO-DO LIST APP-"Builds a To-Do List app with add, delete, and localstorage features"
 - Task 7: FETCH USER DATA-"This task fetches and displays data from an API"
 - Task 8: PRODUCT LISTING WEBSITE-"Product listing page with Search, Filter , Sort , and responsive design"
+- Task 9: CLIENT MANAGEMENT SYSTEM-"Built a Client Management System using HTML, CSS, and JavaScript with dynamic client tracking, status updates, and form validation"
+- Task 10: CORETECH LANDING PAGE-"Developed a fully responsive CoreTech landing page with multiple sections, modern UI design, and interactive navigation for a professional user experience"

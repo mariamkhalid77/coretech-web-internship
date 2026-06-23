@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background:#f8fafc;
+    background:#f3f4f4;
     color:#333;
     line-height:1.6;
 }
@@ -63,7 +63,7 @@ nav{
 }
 
 .logo{
-    color:#fff;
+    color:#faf3f3;
     font-size:1.8rem;
     font-weight:bold;
 }
@@ -78,7 +78,7 @@ nav{
 }
 
 .nav-links a{
-    color:#fff;
+    color:#f0ecec;
     text-decoration:none;
     font-weight:500;
     transition:.3s;
@@ -89,7 +89,7 @@ nav{
 }
 
 .menu-btn{
-    color:#fff;
+    color:#f8f0f0;
     font-size:24px;
     cursor:pointer;
     display:none;
@@ -105,7 +105,7 @@ nav{
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:white;
+    color:rgb(245, 235, 235);
 
     background:
     linear-gradient(
@@ -136,7 +136,7 @@ nav{
     display:inline-block;
     padding:12px 28px;
     background:#2563eb;
-    color:white;
+    color:rgb(245, 237, 237);
     text-decoration:none;
     border-radius:6px;
     margin:5px;
@@ -149,11 +149,11 @@ nav{
 
 .btn-outline{
     background:transparent;
-    border:2px solid white;
+    border:2px solid rgb(199, 196, 196);
 }
 
 .btn-outline:hover{
-    background:white;
+    background:rgb(183, 181, 181);
     color:#0f172a;
 }
 
@@ -237,7 +237,7 @@ nav{
 .why-choose-us {
   padding: 60px 20px;
   text-align: center;
-  background: #e5e5ec;
+  background: #fafafc;
 }
 
 .why-choose-us h2 {
@@ -286,7 +286,7 @@ nav{
 }
 
 .portfolio-card{
-    background:#fff;
+    background:#adadad;
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
@@ -322,7 +322,7 @@ nav{
 }
 
 .testimonial-card{
-    background:#fff;
+    background:#adacac;
     padding:25px;
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
@@ -347,7 +347,7 @@ nav{
 ========================= */
 
 #contact{
-    background:#eef4ff;
+    background:#f0f0f6;
 }
 
 #contactForm{
@@ -375,7 +375,7 @@ nav{
     padding:15px;
     border:none;
     background:#2563eb;
-    color:white;
+    color:rgb(196, 194, 194);
     font-size:16px;
     border-radius:6px;
     cursor:pointer;
@@ -392,7 +392,7 @@ nav{
 
 footer{
     background:#0f172a;
-    color:white;
+    color:rgb(193, 192, 192);
     text-align:center;
     padding:25px;
 }
@@ -403,47 +403,42 @@ footer{
 
 @media(max-width:768px){
 
-    .hero-content h1{
-        font-size:2.3rem;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0f172a;
+    text-align: center;
+    padding: 20px 0;
+  }
 
-    .hero-content p{
-        font-size:1rem;
-    }
+  .nav-links.active {
+    display: flex;
+  }
 
-    .about-container{
-        grid-template-columns:1fr;
-    }
+  .nav-links li {
+    margin: 15px 0;
+  }
 
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:75px;
-        left:0;
-        width:100%;
-        background:#0f172a;
-        flex-direction:column;
-        text-align:center;
-        padding:20px 0;
-    }
+  .menu-btn {
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+  }
 
-    .nav-links.active{
-        display:flex;
-    }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
 
-    .nav-links li{
-        margin:15px 0;
-    }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
 
-    .menu-btn{
-        display:block;
-    }
-
-    section{
-        padding:80px 7%;
-    }
-
-    .section-title{
-        font-size:2rem;
-    }
+  section {
+    padding: 80px 7%;
+  }
 }
