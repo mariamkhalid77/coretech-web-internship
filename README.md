@@ -13,3 +13,4 @@
 - Task 8: PRODUCT LISTING WEBSITE-"Product listing page with Search, Filter , Sort , and responsive design"
 - Task 9: CLIENT MANAGEMENT SYSTEM-"Built a Client Management System using HTML, CSS, and JavaScript with dynamic client tracking, status updates, and form validation"
 - Task 10: CORETECH LANDING PAGE-"Developed a fully responsive CoreTech landing page with multiple sections, modern UI design, and interactive navigation for a professional user experience"
+- Task 11: FINAL CORETECH PROJECT-"Developed a Software house website with multiple sections"
